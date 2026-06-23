@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base - Tailwind CSS Startup Template</title>
+    <link rel="icon" type="image/x-icon" href="../1.Tailwind/images/imgfavicon.svg">
+    <link rel="stylesheet" href="animation.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <nav id="header" class="bg-transparent px-8 text-gray-400 font-semibold fixed top-0 w-full z-10">
+        <div class="flex justify-between items-center">
+            <div class="flex-shrink-0">
+                <a href=""><img src="../1.Tailwind/images/imgi_1_logo-light.svg"></a>
+            </div>
+            <div class="hidden lg:flex space-x-8">
+                <a href="" class="text-blue-600">Home</a>
+                <a href="#features" class="hover:text-blue-600">Features</a>
+                <a href="" class="hover:text-blue-600">Pages</a>
+                <a href="#support" class="hover:text-blue-600">Support</a>
+
+            </div>
+            <div class="hidden lg:flex space-x-8 p-4 items-center">
+                <a href="">Sign In</a>
+                <a href="" class="bg-blue-600 text-white rounded-full py-4 px-8">Sign Up</a>
+
+            </div>
+            
+        </div>
+    </nav>
+
+    <button id="mybtn" class="hidden fixed bottom-10 right-10 w-10 z-10 cursor-pointer bg-blue-600 p-2 rounded-md" onclick="topfunct()">
+    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
+    </svg>
+    </button>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div class="bg-white text-black items-center justify-center px-8 py-12 md:px-12 md:py-36">
+            <h1 class="text-3xl py-6 xl:text-5xl lg:text-4xl md:text-3xl font-bold">We specialize in UI/UX, Web Development, Digital Marketing.</h1>
+            <p class="text-gray-500 text-md mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.</p>
+            <div class="grid grid-cols-1 py-8 items-center justify-center lg:grid-cols-2">
+                <div class="order-1 py-4 lg:order-2">
+                    <p>Call us (0123) 456 – 789 <br>For any question or concern</p>
+                </div>
+                <div class="order-2 py-4 justify-start lg:order-1">
+                    <button type="button" class="text-white bg-blue-800 border hover:shadow-xs rounded-full px-8 py-4">Get Started Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden flex-shrink-1  group  md:grid">
+            <svg viewBox="0 0 752 686" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="423.5" cy="262.5" r="423.5" fill="#4E6BFF"/>
+                <image href="../1.Tailwind/images/imgi_8_hero.png">
+            </svg>
+        </div>
+    </div>
+
+
+     <div class="grid grid-cols-1 py-2 lg:grid-cols-3 md:grid-cols-2 md:place-items-center md:justify-center sm:grid-cols-1">
+        <div class="flex items-center justify-center p-8">
+            <div class="flex-shrink-0 w-20 h-20 p-2 rounded-full place-content-center place-items-center bg-pink-500">
+                <img src="../1.Tailwind/images/imgi_9_icon-01.svg">
+            </div>
+            <div class="p-4">
+                <h1 class="text-2xl">24/7 Support</h1>
+                <p class="text-grey-400">Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-center p-8">
+            <div class="flex-shrink-0 w-20 h-20 p-2 rounded-full place-content-center place-items-center bg-green-500">
+                <img src="../1.Tailwind/images/imgi_10_icon-02.svg">
+            </div>
+            <div class="p-4">
+                <h1 class="text-2xl">Take Ownership</h1>
+                <p class="text-grey-400">Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-center p-8 lg:col-span-1 md:col-span-2 sm:col-span-1">
+            <div class="flex-shrink-0 w-20 h-20 p-2 rounded-full place-content-center place-items-center bg-orange-500">
+                <img src="../1.Tailwind/images/imgi_11_icon-03.svg">
+            </div>
+            <div class="p-4">
+                <h1 class="text-2xl">Take Work</h1>
+                <p class="text-grey-400">Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+
+<section id="features">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 py-12 md:grid-cols-2 p-4 sm:grid-cols-1">
+        <div class="hidden md:grid grid-cols-2 lg:grid grid-cols-2">
+            <div class="bg-white place-items-center">
+                <img src="../1.Tailwind/images/imgi_12_shape-05.svg" class="absolute p-4 mt-6">
+                <img src="../1.Tailwind/images/imgi_13_about-01.png" class="p-4">
+                <img src="../1.Tailwind/images/imgi_14_about-02.png" class="p-4">
+            </div>
+            <div class="bg-white">
+                <img src="../1.Tailwind/images/imgi_15_shape-06.svg" class="p-4">
+                <img src="../1.Tailwind/images/imgi_16_about-03.png" class="p-4">
+                <img src="../1.Tailwind/images/imgi_17_shape-07.svg" class="ml-auto mr-auto">
+            </div>
+        </div>
+        <div class="bg-white place-content-center">
+            <p class="text-1xl font-bold text-blue-600 p-2">Why Choose Us</p>
+            <h1 class="text-3xl lg:text-4xl md:text-3xl font-bold p-2">We Make Our customers happy by giving Best services.</h1>
+            <p class="text-gray-600 p-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+        </div>
+    </div>
+
+</section>
+
+    <div class="relative grid bg-white py-4 items-center justify-center bg-[url(../1.Tailwind/images/shape-08.svg)] bg-no-repeat">
+        <img src="../1.Tailwind/images/imgi_21_shape-10.svg" class="relative top-20 left-56">
+        <img src="../1.Tailwind/images/imgi_22_shape-11.svg" class="absolute bloc right-36 top-12">
+            <h1 class="text-4xl text-center mt-16 mb-4">Meet With Our Creative Dedicated Team</h1>
+            <p class="text-1xl text-center mt-2 mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+        <div class="grid grid-cols-1 items-center lg:grid-cols-3 items-center md:grid-cols-2 items-center sm:grid-cols-1 items-center">
+            <div class="p-8">
+                <div class="">
+                    <img src="../1.Tailwind/images/imgi_23_team-01.png" class="w-full">
+                </div>
+                <div class="p-4">
+                    <h1 class="text-2xl text-center">Olivia Andrium</h1>
+                    <p class="text-center text-gray-500">Product Manager</p>
+                </div>
+            </div>
+            <div class="p-8">
+                <div class="">
+                    <img src="../1.Tailwind/images/imgi_24_team-02.png" class="w-full">
+                </div>
+                <div class="p-4">
+                    <h1 class="text-2xl text-center">Jemse Kemorun</h1>
+                    <p class="text-center text-gray-500">Product Designer</p>
+                </div>
+            </div>
+            <div class="p-8">
+                <div class="">
+                    <img src="../1.Tailwind/images/imgi_25_team-03.png" class="w-full">
+                </div>
+                <div class="p-4">
+                    <h1 class="text-2xl text-center">Avi Pestarica</h1>
+                    <p class="text-center text-gray-500">Web Designer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid py-12 px-16 bg-white">
+
+        <h1 class="text-4xl text-center mb-4">We Offer The Best Quality Service for You</h1>
+        <p class="text-1xl text-center mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+            
+            <div class="bg-white p-6 rounded-base shadow-xs hover:bg-gray-100">
+                <img src="../1.Tailwind/images/imgi_26_icon-04.svg" class="w-12 h-12 mb-3 text-body">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading">Crafted for Startups</h5>
+                    <p class="mb-3 text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+            </div>
+            <div class="bg-white p-6 rounded-base shadow-xs hover:bg-gray-100">
+                <img src="../1.Tailwind/images/imgi_27_icon-05.svg" class="w-12 h-12 mb-3 text-body">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading">High-quality Design</h5>
+                    <p class="mb-3 text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+            </div>
+            <div class="bg-white p-6 rounded-base shadow-xs hover:bg-gray-100">
+                <img src="../1.Tailwind/images/imgi_28_icon-06.svg" class="w-12 h-12 mb-3 text-body">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading">All Essential Sections</h5>
+                    <p class="mb-3 text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+            </div>
+            <div class="bg-white p-6 rounded-base shadow-xs hover:bg-gray-100">
+                <img src="../1.Tailwind/images/imgi_29_icon-07.svg" class="w-12 h-12 mb-3 text-body">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading">Speed Optimized</h5>
+                    <p class="mb-3 text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+            </div>
+            <div class="bg-white p-6 rounded-base shadow-xs hover:bg-gray-100">
+                <img src="../1.Tailwind/images/imgi_27_icon-05.svg" class="w-12 h-12 mb-3 text-body">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading">Fully Customizable</h5>
+                    <p class="mb-3 text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+            </div>
+            <div class="bg-white p-6 rounded-base shadow-xs hover:bg-gray-100">
+                <img src="../1.Tailwind/images/imgi_28_icon-06.svg" class="w-12 h-12 mb-3 text-body">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading">Regular Updates</h5>
+                    <p class="mb-3 text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="grid p-4 bg-blue-100">
+        <h1 class="text-4xl text-center">We Offer Great Affordable Premium Prices.</h1>
+        <p class="text-1xl text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+        <div class="grid grid-cols-1 p-5 items-center lg:grid-cols-3 items-center md:grid-cols-2 items-center sm:grid-cols-1 items-center">
+            <div class="bg-white p-8 border border-default rounded-base text-center m-2">
+                <h3 class="mb-2 text-2xl">Starter</h3>
+                <p><span class="m-2 text-4xl font-bold">$29</span><span class="text-1xl">/per month</span></p>
+                <p class="text-1xl m-2 text-gray-500">No credit card required</p>
+                <p class="text-1xl m-2 text-white bg-pink-400 p-2 hover:bg-indigo-600">Try for free</p>
+                <p class="text-1xl m-2 text-gray-500">400 GB Storaget <br> Unlimited Photos & Videos <br>Exclusive Support </p>
+                <p class="text-1xl m-2">7-day free trial</p>
+            </div>
+            <div class="bg-white p-8 border border-default rounded-base text-center m-2">
+                <h3 class="mb-2 text-2xl">Growth Plan</h3>
+                <p><span class="m-2 text-4xl font-bold">$59</span><span class="text-1xl">/per month</span></p>
+                <p class="text-1xl m-2 text-gray-500">No credit card required</p>
+                <p class="text-1xl m-2 text-white bg-indigo-600 p-2 hover:bg-pink-400">Try for free</p>
+                <p class="text-1xl m-2 text-gray-500">400 GB Storaget <br> Unlimited Photos & Videos <br>Exclusive Support </p>
+                <p class="text-1xl m-2">7-day free trial</p>
+            </div>
+            <div class="bg-white p-8 border border-default rounded-base text-center m-2">
+                <h3 class="mb-2 text-2xl">Business</h3>
+                <p><span class="m-2 text-4xl font-bold">$139</span><span class="text-1xl">/per month</span></p>
+                <p class="text-1xl m-2 text-gray-500">No credit card required</p>
+                <p class="text-1xl m-2 text-white bg-pink-400 p-2 hover:bg-indigo-600">Try for free</p>
+                <p class="text-1xl m-2 text-gray-500">400 GB Storaget <br> Unlimited Photos & Videos <br>Exclusive Support </p>
+                <p class="text-1xl m-2">7-day free trial</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="grid p-4">
+        <h1 class="text-4xl text-center">We Offer Great Affordable Premium Prices.</h1>
+        <p class="text-1xl text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+        <div class="grid grid-cols-1 p-2 lg:grid-cols-3 p-2 md:grid-cols-2 p-2 sm:grid-cols-1 p-2">
+            <div class="bg-white m-4">
+                <img src="../1.Tailwind/images/imgi_32_project-01.png">
+            </div>
+            <div class="bg-white m-4">
+                <img src="../1.Tailwind/images/imgi_33_project-02.png">
+            </div>
+            <div class="bg-white m-4 row-span-2">
+                <img src="../1.Tailwind/images/imgi_34_project-04.png">
+            </div>
+            <div class="bg-white m-4 md:col-span-2 lg:col-span-2">
+                <img src="../1.Tailwind/images/imgi_35_project-03.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="grid bg-stone-50 p-8 xl:p-36">
+        <h1 class="text-4xl text-center">Client’s Testimonials</h1>
+        <p class="text-1xl text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+        <div class="flex flex-col bg-white justify-center items-center  p-10 rounded-base shadow-xs md:flex-row md:flex-row">
+            <img class="object-cover w-full rounded-base md:h-auto md:w-72 mb-4 md:mb-0" src="../1.Tailwind/images/imgi_36_testimonial.png" alt="">
+            <div class="flex flex-col justify-between md:p-10 leading-normal">
+                <img class="object-cover w-12 rounded-base md:h-auto md:w-12 mb-4 md:mb-0" src="../1.Tailwind/images/imgi_37_icon-quote.svg" alt="">
+                <h5 class="mb-2 text-2xl text-gray-500 font-semibold tracking-tight text-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.</h5>
+                <div class="flex justify-between items-center">    
+                    <p class="">Devid Smith <br>Founter @democompany </p>
+
+                    <img src="../1.Tailwind/images/imgi_38_brand-light-02.svg" alt="brand_logo" class="flex w-28 mb-0">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+   <!-- <div class="flex p-4 justify-center">
+
+        <button type="button" class="inline-flex items-center w-auto  border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+            <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+        </button>
+        <button type="button" class="inline-flex items-center w-auto text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+            <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+        </button>
+    </div>-->
+
+    <div class="grid space-x-20 p-2 items-center justify-between bg-stone-100 grid-cols-2 xl:p-12 lg:grid-cols-4 p-2 md:grid-cols-4 py-2">
+        <div class="text-center my-12">
+            <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">785</h1>
+            <p class="text-lg text-gray-500 font-bold">Global Brands</p>
+        </div>
+        <div class="text-center my-12">
+            <h1 class="text-4xl font-bold">533</h1>
+            <p class="text-lg text-gray-500 font-bold">Happy Clients</p>
+        </div>
+        <div class="text-center my-12">
+            <h1 class="text-4xl font-bold">865</h1>
+            <p class="text-lg text-gray-500 font-bold">Winning Award</p>
+        </div>
+       <div class="text-center my-12">
+            <h1 class="text-4xl font-bold">346</h1>
+            <p class="text-lg text-gray-500 font-bold">Happy Clients</p>
+        </div>
+    </div>
+
+    <div class="grid bg-stone-50 p-4 my-24">
+        <h1 class="text-4xl text-center">Trusted by Global Brands</h1>
+        <p class="text-1xl text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+        <div class="grid grid-cols-3 p-8 lg:grid-cols-6 md:grid-cols-6">
+            <div class="grid">
+                <img src="../1.Tailwind/images/imgi_41_brand-light-01.svg">
+            </div>
+            <div class="grid">
+                <img src="../1.Tailwind/images/imgi_38_brand-light-02.svg">
+            </div>
+            <div class="grid">
+                <img src="../1.Tailwind/images/imgi_44_brand-light-03.svg">
+            </div>
+            <div class="grid">
+                <img src="../1.Tailwind/images/imgi_46_brand-light-04.svg">
+            </div>
+            <div class="grid">
+                <img src="../1.Tailwind/images/imgi_48_brand-light-05.svg">
+            </div>
+            <div class="grid">
+                <img src="../1.Tailwind/images/imgi_50_brand-light-06.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="grid bg-stone-50">
+        <h1 class="text-4xl text-center py-2">Latest Blogs & News</h1>
+        <p class="text-1xl text-center py-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+            <div class="grid bg-stone-50 p-4 xl:items-center xl:justify-center">
+
+                <div class="bg-white block max-w-sm rounded-base shadow-xs">
+                        <img class="rounded-t-base" src="../1.Tailwind/images/imgi_52_blog-01.png" alt="img" />
+                    <div class="p-6 text-center ">
+                        <span class="inline-flex items-center bg-brand-softer  text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded-sm">
+                            <img src="../1.Tailwind/images/imgi_53_icon-man.svg">
+                            Musharof
+                        </span>
+                        <span class="inline-flex items-center bg-brand-softer  text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded-sm">
+                            <img src="../1.Tailwind/images/imgi_54_icon-calender.svg">
+                            25 Dec, 2025
+                        </span>
+                     <a href="#">
+                         <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">Free advertising for your online business</h5>
+                     </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid bg-stone-50 p-4 xl:items-center xl:justify-center">
+                
+                <div class="bg-white block max-w-sm  rounded-base shadow-xs">
+                        <img class="rounded-t-base" src="../1.Tailwind/images/imgi_55_blog-02.png" alt="img" />
+                    <div class="p-6 text-center ">
+                        <span class="inline-flex items-center bg-brand-softer text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded-sm">
+                            <img src="../1.Tailwind/images/imgi_53_icon-man.svg">
+                            Musharof
+                        </span>
+                        <span class="inline-flex items-center bg-brand-softer text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded-sm">
+                            <img src="../1.Tailwind/images/imgi_54_icon-calender.svg">
+                            25 Dec, 2025
+                        </span>
+                     <a href="#">
+                         <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">9 simple ways to improve your design skills</h5>
+                     </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid bg-stone-50 p-4 xl:items-center xl:justify-center">
+
+                <div class="bg-white block max-w-sm  rounded-base shadow-xs">
+                        <img class="rounded-t-base" src="../1.Tailwind/images/imgi_56_blog-03.png" alt="img" />
+                    <div class="p-6 text-center">
+                        <span class="inline-flex items-center  bg-brand-softer text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded-sm">
+                            <img src="../1.Tailwind/images/imgi_53_icon-man.svg">
+                            Musharof
+                        </span>
+                        <span class="inline-flex items-center bg-brand-softer text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded-sm">
+                            <img src="../1.Tailwind/images/imgi_54_icon-calender.svg">
+                            25 Dec, 2025
+                        </span>
+                     <a href="#">
+                         <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">Tips to quickly improve your coding speed.</h5>
+                     </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<section id="support">
+
+    <div class="grid bg-gray-100 p-4">
+        <h1 class="text-4xl text-center">Let’s Stay Connected</h1>
+        <p class="text-1xl text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+            <div class="bg-white m-4 p-8 order-2">
+                <div class="mb-4">
+                    <h1 class="text-2xl font-bold">Email Address</h1>
+                    <a href="#">
+                        <p class="text-gray-500">support@startup.com</p>
+                    </a>
+                </div>
+                <div class="mb-4">
+                    <h1 class="text-2xl font-bold">Office Location</h1>
+                        <p class="text-gray-500">76/A, Green valle, Califonia USA.</p>
+                </div>
+                <div class="mb-4">
+                    <h1 class="text-2xl font-bold">Phone Number</h1>
+                        <p class="text-gray-500">+009 8754 3433 223</p>
+                </div>
+                <div class="mb-4">
+                    <h1 class="text-2xl font-bold">Skype Email</h1>
+                        <p class="text-gray-500">example@yourmail.com</p>
+                </div>
+
+                <div>
+                    <h1 class="text-2xl font-bold">Social Media</h1>
+                        <div class="flex">
+                            <a href="#"><img src="facebook_logo.png" width=30px height=20px alt="facebook_logo"></a>
+                            <a href="#"></a><img src="twitter_logo.png" width=30px height=20px  alt="twitter_logo"></a>
+                            <a href="#"></a><img src="linkedin_logo.png" width=30px height=20px  alt="linkedin_logo"></a>
+                            <a href="#"></a><img src="be_logo.png" width=30px height=20px alt="be_logo"></a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="bg-white order-1 m-4 p-8 lg:order-2 md:order-2 sm:order-1">
+                 <div class="grid lg:grid-cols-2 lg:gap-6">
+                    <div class="relative w-full mb-4 group">
+                        <h1 class="text-gray-500 mb-2">Full name</h1>
+                        <input type="name" class="border border-default-medium text-heading text-sm rounded-md focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="Devid Wonder" required>
+                    </div>
+                    <div class="relative w-full mb-4 group">
+                        <h1 class="text-gray-500 mb-2">Email</h1>
+                        <input type="email" class="border border-default-medium text-heading text-sm rounded-md focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="example@gmail.com" required>
+                    </div>
+                 </div>
+                <div class="grid lg:grid-cols-2 lg:gap-6">
+                    <div class="relative w-full mb-4 group">
+                        <h1 class="text-gray-500 mb-2">Phone Number</h1>
+                        <input type="text" class="border border-default-medium text-heading text-sm rounded-md focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="+009 3342 3432" required>
+                    </div>
+                    <div class="relative w-full mb-4 group">
+                        <h1 class="text-gray-500 mb-2">Subject</h1>
+                        <input type="text" class="border border-default-medium text-heading text-sm rounded-md focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="Type your subject" required>
+                    </div>
+                </div>
+                <form class="">
+                    <label for="message" class="block text-gray-500 mb-2 text-heading">Message</label>
+                    <textarea id="message" rows="4" class="border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full p-3.5 shadow-xs placeholder:text-body" placeholder="Message"></textarea>
+                </form>
+
+                <div class="grid place-items-center mt-8">
+                <button type="button" class="text-white bg-blue-800 border hover:shadow-xs rounded-full px-4 py-2.5">Send Message</button>
+                </div>
+
+            </div>   
+
+        </div>
+    </div>
+
+</section>
+
+    <div class="grid bg-blue-700 px-6 py-24 xl:px-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+            <div class="text-white">
+                <h1 class="text-4xl">Join with 5000+ Startups Growing with Base.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus.</p>
+            </div>
+            <div class="grid items-center justify-start py-8 lg:justify-end md:justify-end">
+                <button type="button" class="text-white bg-blue-800 border hover:shadow-xs rounded-full px-8 py-4">Get Started Now</button>
+            </div>
+        </div>
+    </div>
+
+   <div class="grid bg-gray-100 p-4 mr-auto ml-auto">
+        <div class="grid grid-cols-1 p-4 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-1">
+            <div class="col-span-1 lg:col-span-1 md:col-span-4 sm:col-span-1">
+                <img src="../1.Tailwind/images/imgi_1_logo-light.svg">
+                <p class="text-gray-500 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="">
+                <h1 class="text-2xl font-medium mb-4">Quick Links</h1>
+                <p class="text-gray-500 py-2">Home</p>
+                <p class="text-gray-500 py-2">Product</p>
+                <p class="text-gray-500 py-2">Careers</p>
+                <p class="text-gray-500 py-2">Pricing</p>
+            </div>
+            <div class="">
+                <h1 class="text-2xl font-medium mb-4">Services</h1>
+                <p class="text-gray-500 py-2">Web Development</p>
+                <p class="text-gray-500 py-2">Graphics Design</p>
+                <p class="text-gray-500 py-2">Digital Marketing</p>
+                <p class="text-gray-500 py-2">Ui/Ux Design</p>
+            </div>
+            <div class="">
+                <h1 class="text-2xl font-medium mb-4">Support</h1>
+                <p class="text-gray-500 py-2">Company</p>
+                <p class="text-gray-500 py-2">Press Media</p>
+                <p class="text-gray-500 py-2">Our Blogs</p>
+                <p class="text-gray-500 py-2">Contact Us</p>
+            </div>
+            <div class="">
+                <h1 class="text-2xl font-medium mb-4">Newsletter</h1>
+                <p class="text-gray-500 py-2">Subscribe to receive future updates</p>
+                <input type="emai" class="border border-default-medium text-heading text-sm rounded-md focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="Email address" required>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="flex items-center justify-center lg:justify-start">
+                <h1>English &nbsp;</h1>
+                <h1>Privacy Policy &nbsp;</h1>
+                <h1>Support </h1>
+            </div>
+            <div class="grid items-center justify-center lg:justify-end">
+                © 2025 Base. All rights reserved. Distributed by ThemeWagon
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const head = document.getElementById('header');
+        const btn = document.getElementById('mybtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) { 
+                head.classList.remove('bg-transparent');
+                head.classList.add('bg-white');
+                head.classList.add('shadow-xl')
+                btn.classList.remove('hidden');
+            } else {
+                head.classList.remove('bg-white');
+                head.classList.remove('shadow-xl')
+                head.classList.add('bg-transparent');
+                btn.classList.add('hidden');
+            }
+        });
+
+        function topfunct(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
